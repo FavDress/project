@@ -1,0 +1,7 @@
+FIO = input('ФИО: ')
+FIO1 = FIO.strip()
+w1 = FIO1.split()
+init = ''.join([w[0].upper() for w in w1])
+l = len(FIO1)
+print(f'Инициалы: {init}.')
+print(f'Длина (символов): {l}')
