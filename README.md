@@ -49,11 +49,16 @@ else:
 ```
 5. ![Картинка5](./images/Lab01.Код%20работы%20номера%205.png)
 ```python
-FIO = input('ФИО: ')
-FIO1 = FIO.strip()
-w1 = FIO1.split()
-init = ''.join([w[0].upper() for w in w1])
-l = len(FIO1)
-print(f'Инициалы: {init}.')
-print(f'Длина (символов): {l}')
+st = str(input()) 
+ini = '' 
+while '  ' in st: 
+    st = st.replace('  ', ' ') 
+st = st.strip() 
+for a in st: 
+    if a.isupper(): 
+        ini += a 
+ 
+ 
+print(ini) 
+print(len(st))
 ```

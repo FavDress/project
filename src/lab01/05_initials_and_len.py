@@ -9,4 +9,4 @@ for a in st:
  
  
 print(ini) 
-print(len(st))
+print(len(st))  
